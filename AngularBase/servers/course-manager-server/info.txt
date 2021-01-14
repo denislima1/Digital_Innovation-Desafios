@@ -1,0 +1,3 @@
+acessar a pasta e iniciar o servidor
+
+node serve.js

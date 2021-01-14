@@ -1,0 +1,204 @@
+/*Cor definitiva*/
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+ /* logo */
+header .container{    
+    display: flex; /*flexbox*/
+    flex-direction: row; /*ja vem por default*/
+    align-items: center;
+    margin-left: 160px;    
+}
+
+header .iconesnav:nth-child(1) {
+    margin-left: 420px;    
+}
+
+header .iconesnav:nth-child(2) {
+    margin-left: 15px;
+}
+
+header .iconesnav:nth-child(3) {
+    margin-left: 20px;
+}
+
+header .iconesnav:nth-child(4) {
+    margin-left: 30px;
+}
+
+header .iconesnav:nth-child(5) {
+    margin-left: 30px;
+}
+
+header .iconesnav {
+    background-color: #141414;
+    border:none;
+    color: white;        
+}
+
+header #logo{    
+    margin-bottom: 40px;
+ }
+ 
+ header #logo span{    
+    margin-top: 1px;
+ }
+
+ #logo .w0 {
+    transform: rotate(-0.10rad); /*N  */
+    left: 40px; /*Posicionamento aonde Inicia o texto*/
+    top: 4.5px; /*Posicionamento do inicio do texto*/                         
+    font-family: 'Bebas Neue', cursive;
+   }
+
+#logo .w1 {
+    transform: rotate(-0.06rad);
+    left: 53px; /*Posicionamento aonde Inicia o texto*/
+    top: 2.5px; /*Posicionamento do inicio do texto*/                         
+    font-family: 'Bebas Neue', cursive;
+   }
+
+#logo .w2 {                        
+   left: 64px; 
+   top: 2.3px;
+   font-family: 'Bebas Neue', cursive;
+}
+
+#logo .w3 {    
+    left: 75px; 
+    top: 2.3px;
+    font-family: 'Bebas Neue', cursive;
+   }
+
+#logo .w4 {
+    transform: rotate(0.05rad);
+    left: 85px;
+    top: 2.4px;
+    font-family: 'Bebas Neue', cursive;
+   }
+
+#logo .w5 {
+    transform: rotate(0.05rad);
+    left: 96.5px; 
+    top: 3px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+#logo .w6 {
+    transform: rotate(0.13rad);
+    left: 103px; 
+    top: 4px;
+    font-family: 'Bebas Neue', cursive;
+    
+   }
+
+#logo>span[class^=w]:nth-of-type(n+0){      
+   position: absolute;
+   transform-origin: 50% 100%; 
+   font-size: 25px;
+   color: var(--vermelho);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header .fas{
+    width: 20px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+/*Filme principal*/
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+    text-align: justify;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /*os botoes ficam em coluna*/
+    justify-content: center;
+    align-items: flex-start; /*os elementos comecam da esquerda*/
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 43px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;/*espaco interno do elemento*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /**/
+    transition: .3s ease all;
+}
+
+.filme-principal .botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.filme-principal .botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
